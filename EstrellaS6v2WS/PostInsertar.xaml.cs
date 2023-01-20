@@ -30,7 +30,7 @@ namespace EstrellaS6v2WS
                 parametros.Add("apellido", txtApellido.Text);
                 parametros.Add("edad", txtEdad.Text);
 
-                client.UploadValues("http://172.24.96.1/uisrael2023/post.php", "POST", parametros);
+                client.UploadValues("http://192.168.100.10/uisrael2023/post.php", "POST", parametros);
                 await DisplayAlert("Alerta", "Ingreso correctamente", "OK");
 
             }

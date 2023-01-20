@@ -14,7 +14,7 @@ namespace EstrellaS6v2WS
 {
     public partial class MainPage : ContentPage
     {
-        private const string Url = "http://172.24.96.1/uisrael2023/post.php";
+        private const string Url = "http://192.168.100.10/uisrael2023/post.php";
         private readonly HttpClient client = new HttpClient();
         private ObservableCollection<EstrellaS6v2WS.WS.Datos> _post;
 
@@ -35,6 +35,17 @@ namespace EstrellaS6v2WS
         private async void btnPost_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new PostInsertar());
+        }
+
+
+        private async void btnDelete_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Delete());
+        }
+
+        private async void btnPut_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Put());
         }
     }
 }

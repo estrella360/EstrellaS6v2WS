@@ -4,7 +4,7 @@
              x:Class="EstrellaS6v2WS.MainPage">
 
     <StackLayout>
-        <Label Text="Consumir web service Get" FontSize="20" HorizontalTextAlignment="Center"/>
+        <Label Text="Consumir web service" FontSize="20" HorizontalTextAlignment="Center"/>
         <Label x:Name="texto" Text=""></Label>
         
         <ListView x:Name="MyListView">
@@ -24,7 +24,9 @@
 
         <Button Text="Consultar" x:Name="btnGet" Clicked="btnGet_Clicked"/>
         <Button Text="Insertar" x:Name="btnPost" Clicked="btnPost_Clicked"/>
-        
+        <Button Text="Actualizar" x:Name="btnPut" Clicked="btnPut_Clicked"/>
+        <Button Text="Eiminar" x:Name="btnDelete" Clicked="btnDelete_Clicked"/>
+
 
     </StackLayout>
 
